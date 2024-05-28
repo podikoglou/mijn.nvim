@@ -16,6 +16,8 @@ local servers = {
   kotlin_language_server = {},
   ruff_lsp = {},
   biome = {},
+  gleam = {},
+  tailwindcss = {},
 }
 
 for name, opts in pairs(servers) do
