@@ -7,17 +7,16 @@ local servers = {
   tsserver = {},
   bashls = {},
   gopls = {},
+  ocamllsp = {},
   cmake = {},
   astro = {},
-  phpactor = {},
   docker_compose_language_service = {},
   dockerls = {},
   pyright = {},
-  kotlin_language_server = {},
   ruff_lsp = {},
   biome = {},
-  gleam = {},
   tailwindcss = {},
+  yamlls = {},
 }
 
 for name, opts in pairs(servers) do
