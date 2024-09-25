@@ -23,12 +23,6 @@ return {
   -- mason lsp server installer
   {
     "williamboman/mason.nvim",
-    opts = {
-      ensure_installed = {
-        "lua-language-server",
-        "stylua",
-      },
-    },
   },
 
   -- treesitter with some preinstalled (or rather automatically installing) grammars
@@ -62,4 +56,23 @@ return {
     lazy = leet_arg ~= vim.fn.argv()[1],
     opts = { arg = leet_arg },
   },
+
+  {
+    'boganworld/crackboard.nvim',
+    dependencies = { 'nvim-lua/plenary.nvim' },
+    lazy = false,
+    config = function()
+      require('crackboard').setup({
+      })
+    end,
+  },
+
+  {
+    "David-Kunz/gen.nvim",
+    lazy = false,
+    opts = {
+      model = "argilla/notus"
+    }
+  },
+
 }

@@ -1,9 +1,7 @@
 require "nvchad.options"
 
--- add yours here!
-
 local o = vim.o
-o.cursorlineopt = "both" -- to enable cursorline!
+o.cursorlineopt = "both"                    -- to enable cursorline!
 
 local augroup = vim.api.nvim_create_augroup -- Create/get autocommand group
 local autocmd = vim.api.nvim_create_autocmd -- Create autocommand
@@ -13,10 +11,10 @@ function docker_fix()
   local filename = vim.fn.expand "%:t"
 
   if
-    filename == "docker-compose.yml"
-    or filename == "compose.yml"
-    or filename == "docker-compose.yaml"
-    or filename == "compose.yaml"
+      filename == "docker-compose.yml"
+      or filename == "compose.yml"
+      or filename == "docker-compose.yaml"
+      or filename == "compose.yaml"
   then
     vim.bo.filetype = "yaml.docker-compose"
     print "matched!"

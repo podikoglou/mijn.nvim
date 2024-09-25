@@ -4,7 +4,7 @@ local servers = {
   rust_analyzer = {},
   clangd = {},
   cssls = {},
-  tsserver = {},
+  ts_ls = {},
   bashls = {},
   gopls = {},
   ocamllsp = {},
@@ -12,11 +12,15 @@ local servers = {
   astro = {},
   docker_compose_language_service = {},
   dockerls = {},
-  pyright = {},
+  basedpyright = {},
   ruff_lsp = {},
   biome = {},
   tailwindcss = {},
   yamlls = {},
+  helm_ls = {},
+  svelte = {},
+  zls = {},
+  ruby_lsp = {},
 }
 
 for name, opts in pairs(servers) do
