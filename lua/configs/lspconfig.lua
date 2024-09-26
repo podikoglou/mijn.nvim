@@ -21,6 +21,7 @@ local servers = {
   svelte = {},
   zls = {},
   ruby_lsp = {},
+  lexical = { cmd = { "/Users/apodikoglou/.local/share/nvim/mason/bin/lexical" } },
 }
 
 for name, opts in pairs(servers) do
