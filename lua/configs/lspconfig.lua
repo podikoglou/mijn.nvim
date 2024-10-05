@@ -7,6 +7,7 @@ local servers = {
   ts_ls = {},
   bashls = {},
   gopls = {},
+  golangci_lint_ls = { },
   ocamllsp = {},
   cmake = {},
   astro = {},
