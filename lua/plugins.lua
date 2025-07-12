@@ -24,11 +24,11 @@ local ui = {
 local editing_support = {
 	-- Editing Support
 	{
-		"echasnovski/mini.surround",
-		version = false,
-		config = function()
-			require("mini.surround").setup()
-		end,
+		"windwp/nvim-autopairs",
+		event = "InsertEnter",
+		config = true,
+		-- use opts = {} for passing setup options
+		-- this is equivalent to setup({}) function
 	},
 	{
 		"folke/ts-comments.nvim",
