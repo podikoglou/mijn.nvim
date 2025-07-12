@@ -12,7 +12,7 @@ vim.opt.background = "dark"
 
 -- keybinds
 local map = vim.keymap.set
-local telescope = require('telescope.builtin')
+local telescope = require("telescope.builtin")
 
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
@@ -21,9 +21,9 @@ vim.g.maplocalleader = "\\"
 map("n", ";", ":")
 
 -- telescope
-map('n', '<leader>ff', telescope.find_files)
-map('n', '<leader>fw', telescope.live_grep)
-map('n', '<leader>fb', telescope.buffers)
+map("n", "<leader>ff", telescope.find_files)
+map("n", "<leader>fw", telescope.live_grep)
+map("n", "<leader>fb", telescope.buffers)
 
 -- commenting
 map("n", "<leader>/", "gcc", { remap = true })
@@ -51,22 +51,23 @@ vim.opt.clipboard = "unnamedplus"
 local theme_script_path = vim.fn.expand("~/.local/share/tinted-theming/tinty/base16-vim-colors-file.vim")
 
 local function file_exists(file_path)
-  return vim.fn.filereadable(file_path) == 1 and true or false
+	return vim.fn.filereadable(file_path) == 1 and true or false
 end
 
 local function handle_focus_gained()
-  if file_exists(theme_script_path) then
-      vim.cmd("source " .. theme_script_path)
-  end
+	if file_exists(theme_script_path) then
+		vim.cmd("source " .. theme_script_path)
+	end
 end
 
 if file_exists(theme_script_path) then
-  vim.o.termguicolors = true
-  vim.g.tinted_colorspace = 256
+	vim.o.termguicolors = true
+	vim.g.tinted_colorspace = 256
+	vim.g.tinted_background_transparent = "1"
 
-  vim.cmd("source " .. theme_script_path)
+	vim.cmd("source " .. theme_script_path)
 
-  vim.api.nvim_create_autocmd("FocusGained", {
-    callback = handle_focus_gained,
-  })
+	vim.api.nvim_create_autocmd("FocusGained", {
+		callback = handle_focus_gained,
+	})
 end
