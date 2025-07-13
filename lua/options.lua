@@ -7,6 +7,7 @@ vim.opt.expandtab = true
 
 vim.opt.smartindent = false
 vim.opt.autoindent = false
+
 vim.opt.guicursor = "n-v-i-c:block-Cursor"
 
 -- color scheme
@@ -36,15 +37,25 @@ map("n", "<leader>e", "<cmd>NvimTreeToggle<CR>")
 -- map("n", "<C-n>", "<cmd>NvimTreeToggle<CR>")
 
 -- buffers
-map("n", "L", "<cmd>bnext<CR>")
-map("n", "H", "<cmd>bprevious<CR>")
-map("n", "<Tab>", "<cmd>bnext<CR>")
-map("n", "<leader>x", "<cmd>bd<CR>")
+-- map("n", "L", "<cmd>bnext<CR>")
+-- map("n", "H", "<cmd>bprevious<CR>")
+-- map("n", "<Tab>", "<cmd>bnext<CR>")
+-- map("n", "<leader>x", "<cmd>bd<CR>")
 
 -- lsp
-map("n", "<leader>gd", "<cmd>lua vim.lsp.buf.declaration()<CR>")
+map("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>")
 map("n", "<leader>r", "<cmd>lua vim.lsp.buf.rename()<CR>")
 map("n", "<leader>ca", "<cmd>lua vim.lsp.buf.code_action()<CR>")
+
+-- Move to previous/next
+map("n", "H", "<Cmd>BufferPrevious<CR>")
+map("n", "<Tab>", "<Cmd>BufferPrevious<CR>")
+
+map("n", "L", "<Cmd>BufferNext<CR>")
+map("n", "<S-Tab>", "<Cmd>BufferNext<CR>")
+
+-- Close buffer
+map("n", "<leader>x", "<Cmd>BufferClose<CR>")
 
 -- clipboard
 vim.opt.clipboard = "unnamedplus"
