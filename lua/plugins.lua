@@ -29,6 +29,7 @@ local ui = {
 		},
 		version = "^1.0.0", -- optional: only update when a new 1.x version is released
 	},
+	{ "hiphish/rainbow-delimiters.nvim" },
 }
 
 local editing_support = {
