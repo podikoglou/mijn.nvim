@@ -107,6 +107,7 @@ local language_support = {
 			vim.lsp.enable("clangd")
 			vim.lsp.enable("cssls")
 			vim.lsp.enable("ts_ls")
+			vim.lsp.enable("csslsp")
 			vim.lsp.enable("bashls")
 			vim.lsp.enable("gopls")
 			vim.lsp.enable("golangci_lint_ls")
@@ -128,6 +129,11 @@ local language_support = {
 			vim.lsp.enable("phpactor")
 			vim.lsp.enable("tinymist")
 			vim.lsp.enable("biome")
+			vim.lsp.enable("hls")
+
+			vim.lsp.config("hls", {
+				cmd = { "haskell-language-server-wrapper", "--lsp" },
+			})
 
 			require("coq_3p")({
 				{ src = "nvimlua", short_name = "nLUA" },
