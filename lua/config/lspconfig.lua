@@ -35,3 +35,4 @@ vim.lsp.config("hls", {
 
 
 vim.lsp.config("html_s", {
+})
