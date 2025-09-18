@@ -3,6 +3,7 @@ vim.lsp.enable({
   "clangd",
   "cssls",
   "ts_ls",
+  "html",
   "csslsp",
   "bashls",
   "gopls",
@@ -31,3 +32,6 @@ vim.lsp.enable({
 vim.lsp.config("hls", {
   cmd = { "haskell-language-server-wrapper", "--lsp" },
 })
+
+
+vim.lsp.config("html_s", {
