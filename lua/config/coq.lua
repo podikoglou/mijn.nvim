@@ -1,4 +1,3 @@
-function setup()
   vim.g.coq_settings = {
     auto_start = "shut-up",
   }
@@ -14,4 +13,3 @@ function setup()
     -- { src = "copilot", short_name = "COP", accept_key = "<c-f>" },
     -- { src = "codeium", short_name = "COD" },
   })
-end

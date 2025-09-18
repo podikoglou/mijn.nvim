@@ -1,6 +1,6 @@
 vim.pack.add({
   -- lib
-  "https://github.com/nvim/plenary.nvim",
+  -- "https://github.com/nvim/plenary.nvim",
 
   -- icons
   "https://github.com/echasnovski/mini.icons",
@@ -24,23 +24,23 @@ vim.pack.add({
   "https://github.com/nvim-treesitter/nvim-treesitter",
 
   -- completion
-  "https://github.com/ms-jpq/coq_nvim",
-  "https://github.com/ms-jpq/coq.artifacts",
-  "https://github.com/ms-jpq/coq.thirdparty",
+  -- "https://github.com/ms-jpq/coq_nvim",
+  -- "https://github.com/ms-jpq/coq.artifacts",
+  -- "https://github.com/ms-jpq/coq.thirdparty",
 
   -- languages
   "https://github.com/Julian/lean.nvim",
 })
 
-require "config.mini_icons"
-require "config.barbar"
-require "config.autopairs"
-require "config.ts-comments"
-require "config.conform"
-require "config.telescope"
-require "config.nvim-tree"
-require "config.mason"
-require "config.lspconfig"
-require "config.coq"
-require "config.treesitter"
-require "config.lean4"
+require("config.mini_icons")
+require("config.barbar")
+require("config.autopairs")
+require("config.ts-comments")
+require("config.conform")
+require("config.telescope")
+require("config.nvim-tree")
+require("config.mason")
+require("config.lspconfig")
+require("config.completion")
+require("config.treesitter")
+require("config.lean4")

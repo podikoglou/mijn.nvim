@@ -1,33 +1,33 @@
-function setup()
-  vim.lsp.enable("rust_analyzer")
-  vim.lsp.enable("clangd")
-  vim.lsp.enable("cssls")
-  vim.lsp.enable("ts_ls")
-  vim.lsp.enable("csslsp")
-  vim.lsp.enable("bashls")
-  vim.lsp.enable("gopls")
-  vim.lsp.enable("golangci_lint_ls")
-  vim.lsp.enable("ocamllsp")
-  vim.lsp.enable("cmake")
-  vim.lsp.enable("astro")
-  vim.lsp.enable("docker_compose_language_service")
-  vim.lsp.enable("dockerls")
-  vim.lsp.enable("pyrefly")
-  vim.lsp.enable("biome")
-  vim.lsp.enable("tailwindcss")
-  vim.lsp.enable("yamlls")
-  vim.lsp.enable("helm_ls")
-  vim.lsp.enable("svelte")
-  vim.lsp.enable("lua_ls")
-  vim.lsp.enable("zls")
-  vim.lsp.enable("ruby_lsp")
-  vim.lsp.enable("vuels")
-  vim.lsp.enable("phpactor")
-  vim.lsp.enable("tinymist")
-  vim.lsp.enable("biome")
-  vim.lsp.enable("hls")
+vim.lsp.enable({
+  "rust_analyzer",
+  "clangd",
+  "cssls",
+  "ts_ls",
+  "csslsp",
+  "bashls",
+  "gopls",
+  "golangci_lint_ls",
+  "ocamllsp",
+  "cmake",
+  "astro",
+  "docker_compose_language_service",
+  "dockerls",
+  "pyrefly",
+  "biome",
+  "tailwindcss",
+  "yamlls",
+  "helm_ls",
+  "svelte",
+  "emmylua_ls",
+  "zls",
+  "ruby_lsp",
+  "vuels",
+  "phpactor",
+  "tinymist",
+  "biome",
+  "hls"
+})
 
-  vim.lsp.config("hls", {
-    cmd = { "haskell-language-server-wrapper", "--lsp" },
-  })
-end
+vim.lsp.config("hls", {
+  cmd = { "haskell-language-server-wrapper", "--lsp" },
+})

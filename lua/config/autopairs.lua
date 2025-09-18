@@ -1,5 +1,3 @@
-function setup()
-  require("nvim-autopairs").setup({
-    map_cr = false,
-  })
-end
+require("nvim-autopairs").setup({
+	map_cr = false,
+})
