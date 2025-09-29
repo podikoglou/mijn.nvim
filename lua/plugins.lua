@@ -16,6 +16,7 @@ vim.pack.add({
   -- editing
   "https://github.com/folke/ts-comments.nvim",
   "https://github.com/stevearc/conform.nvim",
+  "https://github.com/L3MON4D3/LuaSnip",
 
   -- lsp & language support
   "https://github.com/williamboman/mason.nvim",
@@ -41,5 +42,6 @@ require("config.nvim-tree")
 require("config.mason")
 require("config.lspconfig")
 require("config.completion")
+require("config.luasnip")
 require("config.treesitter")
 require("config.lean4")
