@@ -16,6 +16,7 @@ vim.pack.add({
   -- editing
   "https://github.com/folke/ts-comments.nvim",
   "https://github.com/stevearc/conform.nvim",
+  "https://github.com/mlaursen/vim-react-snippets",
   "https://github.com/L3MON4D3/LuaSnip",
 
   -- lsp & language support
