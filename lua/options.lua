@@ -15,7 +15,6 @@ vim.opt.background = "dark"
 
 -- keybinds
 local map = vim.keymap.set
-local telescope = require("telescope.builtin")
 
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
@@ -23,10 +22,11 @@ vim.g.maplocalleader = "\\"
 -- : => ;
 map("n", ";", ":")
 
--- telescope
-map("n", "<leader>ff", telescope.find_files)
-map("n", "<leader>fw", telescope.live_grep)
-map("n", "<leader>fb", telescope.buffers)
+
+-- pick
+map("n", "<leader>ff", '<cmd>Pick files<CR>')
+-- map("n", "<leader>fw", telescope.live_grep)
+-- map("n", "<leader>fb", telescope.buffers)
 
 -- commenting
 map("n", "<leader>/", "gcc", { remap = true })
