@@ -51,7 +51,7 @@ map('n', '<leader>f', vim.lsp.buf.format)
 map("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>")
 map("n", "<leader>r", "<cmd>lua vim.lsp.buf.rename()<CR>")
 map("n", "<leader>ca", "<cmd>lua vim.lsp.buf.code_action()<CR>")
-map('i', '<c-space>', "<cmd>lua vim.lsp.completion.get()<CR>")
+map('i', '<c-e>', "<cmd>lua vim.lsp.completion.get()<CR>")
 
 -- Move to previous/next
 map("n", "H", "<Cmd>BufferPrevious<CR>")
