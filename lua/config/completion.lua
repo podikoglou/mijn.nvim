@@ -14,4 +14,4 @@ vim.api.nvim_create_autocmd('LspAttach', {
 })
 
 
-vim.cmd [[set completeopt+=menuone,noselect,popup]]
+vim.cmd [[set completeopt+=menuone,noinsert,preview,noselect,popup]]

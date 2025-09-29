@@ -33,6 +33,5 @@ vim.lsp.config("hls", {
   cmd = { "haskell-language-server-wrapper", "--lsp" },
 })
 
-
 vim.lsp.config("html_s", {
 })
