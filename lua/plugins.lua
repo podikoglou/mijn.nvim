@@ -25,6 +25,7 @@ vim.pack.add({
   "https://github.com/nvim-treesitter/nvim-treesitter",
 
   -- completion
+  "https://github.com/nvim-mini/mini.completion",
   -- "https://github.com/ms-jpq/coq_nvim",
   -- "https://github.com/ms-jpq/coq.artifacts",
   -- "https://github.com/ms-jpq/coq.thirdparty",
@@ -41,8 +42,8 @@ require("config.conform")
 require("config.mini_pick")
 require("config.nvim-tree")
 require("config.mason")
+require("config.mini_completion")
 require("config.lspconfig")
-require("config.completion")
 require("config.luasnip")
 require("config.treesitter")
 require("config.lean4")

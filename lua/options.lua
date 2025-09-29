@@ -10,6 +10,8 @@ vim.opt.autoindent = false
 
 vim.opt.guicursor = "n-v-i-c:block-Cursor"
 
+vim.opt.winborder = "rounded"
+
 -- color scheme
 vim.opt.background = "dark"
 
@@ -51,7 +53,6 @@ map('n', '<leader>f', vim.lsp.buf.format)
 map("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>")
 map("n", "<leader>r", "<cmd>lua vim.lsp.buf.rename()<CR>")
 map("n", "<leader>ca", "<cmd>lua vim.lsp.buf.code_action()<CR>")
-map('i', '<c-e>', "<cmd>lua vim.lsp.completion.get()<CR>")
 
 -- luasnip
 map("i", "<C-e>", function() require('luasnip').expand_or_jump(1) end, { silent = true })
