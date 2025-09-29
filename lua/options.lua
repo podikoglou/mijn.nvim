@@ -22,6 +22,8 @@ vim.g.maplocalleader = "\\"
 -- : => ;
 map("n", ";", ":")
 
+-- reload config file (MAGIC)
+map({ 'n', 'v' }, '<leader>o', ':update<CR> :source<CR>')
 
 -- pick
 map("n", "<leader>ff", '<cmd>Pick files<CR>')
