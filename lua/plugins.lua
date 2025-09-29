@@ -16,8 +16,8 @@ vim.pack.add({
   -- editing
   "https://github.com/folke/ts-comments.nvim",
   "https://github.com/stevearc/conform.nvim",
-  "https://github.com/mlaursen/vim-react-snippets",
-  "https://github.com/L3MON4D3/LuaSnip",
+  "https://github.com/rafamadriz/friendly-snippets",
+  "https://github.com/nvim-mini/mini.snippets",
 
   -- lsp & language support
   "https://github.com/williamboman/mason.nvim",
@@ -44,6 +44,6 @@ require("config.nvim-tree")
 require("config.mason")
 require("config.mini_completion")
 require("config.lspconfig")
-require("config.luasnip")
+require("config.mini_snippets")
 require("config.treesitter")
 require("config.lean4")
