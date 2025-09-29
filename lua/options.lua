@@ -27,8 +27,8 @@ map({ 'n', 'v' }, '<leader>o', ':update<CR> :source<CR>')
 
 -- pick
 map("n", "<leader>ff", '<cmd>Pick files<CR>')
--- map("n", "<leader>fw", telescope.live_grep)
--- map("n", "<leader>fb", telescope.buffers)
+map("n", "<leader>fw", '<cmd>Pick grep_live<CR>')
+map("n", "<leader>fb", '<cmd>Pick buffers<CR>')
 
 -- commenting
 map("n", "<leader>/", "gcc", { remap = true })
