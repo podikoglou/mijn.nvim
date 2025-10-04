@@ -1,6 +1,4 @@
 vim.pack.add({
-	-- lib
-
 	-- icons
 	"https://github.com/echasnovski/mini.icons",
 	"https://github.com/lewis6991/gitsigns.nvim",
@@ -27,9 +25,6 @@ vim.pack.add({
 
 	-- completion
 	"https://github.com/nvim-mini/mini.completion",
-	-- "https://github.com/ms-jpq/coq_nvim",
-	-- "https://github.com/ms-jpq/coq.artifacts",
-	-- "https://github.com/ms-jpq/coq.thirdparty",
 
 	-- languages
 	"https://github.com/Julian/lean.nvim",
