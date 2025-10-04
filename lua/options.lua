@@ -56,6 +56,8 @@ map("n", "<leader>ca", "<cmd>lua vim.lsp.buf.code_action()<CR>")
 
 -- luasnip
 map("i", "<C-e>", function() require('luasnip').expand_or_jump(1) end, { silent = true })
+-- Hop
+map("n", "f", "<Cmd>HopWord<CR>")
 
 -- Move to previous/next
 map("n", "H", "<Cmd>BufferPrevious<CR>")
