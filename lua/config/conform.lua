@@ -3,8 +3,8 @@ require("conform").setup({
 		lua = { "stylua" },
 		python = { "ruff" },
 		rust = { "rustfmt", lsp_format = "fallback" },
-		javascript = { "biome" },
-		typescript = { "biome" },
+		javascript = { "biome", "biome-check", "biome-organize-imports" },
+		typescript = { "biome", "biome-check", "biome-organize-imports" },
 	},
 	format_on_save = {
 		timeout_ms = 500,
