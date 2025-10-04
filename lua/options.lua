@@ -40,9 +40,6 @@ map("v", "<leader>/", "gc", { remap = true })
 map("n", "<leader>e", "<cmd>NvimTreeToggle<CR>")
 -- map("n", "<C-n>", "<cmd>NvimTreeToggle<CR>")
 
--- format
-map('n', '<leader>f', vim.lsp.buf.format)
-
 -- buffers
 -- map("n", "L", "<cmd>bnext<CR>")
 -- map("n", "H", "<cmd>bprevious<CR>")
