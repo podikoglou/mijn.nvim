@@ -1,1 +1,1 @@
-require('mini.pick').setup()
+require("mini.pick").setup()
