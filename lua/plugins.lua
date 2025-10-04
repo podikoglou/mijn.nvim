@@ -7,7 +7,6 @@ vim.pack.add({
 	-- ui
 	"https://github.com/romgrk/barbar.nvim",
 	"https://github.com/hiphish/rainbow-delimiters.nvim",
-	"https://github.com/windwp/nvim-autopairs",
 	"https://github.com/nvim-tree/nvim-tree.lua",
 	"https://github.com/nvim-mini/mini.pick",
 
@@ -17,6 +16,7 @@ vim.pack.add({
 	"https://github.com/rafamadriz/friendly-snippets",
 	"https://github.com/nvim-mini/mini.snippets",
 	"https://github.com/smoka7/hop.nvim",
+	"https://github.com/nvim-mini/mini.pairs",
 
 	-- lsp & language support
 	"https://github.com/williamboman/mason.nvim",
@@ -32,7 +32,7 @@ vim.pack.add({
 
 require("config.mini_icons")
 require("config.barbar")
-require("config.autopairs")
+require("config.mini_pairs")
 require("config.hop")
 require("config.mini_comment")
 require("config.conform")
