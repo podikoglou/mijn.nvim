@@ -14,7 +14,7 @@ vim.pack.add({
 	"https://github.com/nvim-mini/mini.pick",
 
 	-- editing
-	"https://github.com/folke/ts-comments.nvim",
+	"https://github.com/nvim-mini/mini.comment",
 	"https://github.com/stevearc/conform.nvim",
 	"https://github.com/rafamadriz/friendly-snippets",
 	"https://github.com/nvim-mini/mini.snippets",
@@ -39,7 +39,7 @@ require("config.mini_icons")
 require("config.barbar")
 require("config.autopairs")
 require("config.hop")
-require("config.ts-comments")
+require("config.mini_comment")
 require("config.conform")
 require("config.mini_pick")
 require("config.nvim-tree")
