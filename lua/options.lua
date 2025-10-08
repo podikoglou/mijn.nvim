@@ -68,6 +68,15 @@ map("n", "<S-Tab>", "<Cmd>BufferNext<CR>")
 -- Close buffer
 map("n", "<leader>x", "<Cmd>BufferClose<CR>")
 
+-- shifting in visual mode stays in visual mode
+map('x', '>', '>gv')
+map('x', '<', '<gv')
+
+-- move aroudn panes
+map('n', '<C-h>', '<C-w>h')
+map('n', '<C-j>', '<C-w>j')
+map('n', '<C-k>', '<C-w>k')
+map('n', '<C-l>', '<C-w>l')
 -- clipboard
 vim.opt.clipboard = "unnamedplus"
 
