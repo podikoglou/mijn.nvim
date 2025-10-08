@@ -1,4 +1,7 @@
 vim.pack.add({
+  -- lib
+  "https://github.com/nvim-lua/plenary.nvim",
+
   -- icons
   "https://github.com/echasnovski/mini.icons",
   "https://github.com/lewis6991/gitsigns.nvim",
@@ -8,7 +11,7 @@ vim.pack.add({
   "https://github.com/romgrk/barbar.nvim",
   "https://github.com/hiphish/rainbow-delimiters.nvim",
   "https://github.com/nvim-tree/nvim-tree.lua",
-  "https://github.com/nvim-mini/mini.pick",
+  "https://github.com/nvim-telescope/telescope.nvim",
 
   -- editing
   "https://github.com/nvim-mini/mini.comment",
@@ -36,8 +39,7 @@ require("config.mini_pairs")
 require("config.hop")
 require("config.mini_comment")
 require("config.conform")
-require("config.mini_pick")
-
+require("config.telescope")
 require("config.nvim-tree")
 require("config.mason")
 require("config.mini_completion")

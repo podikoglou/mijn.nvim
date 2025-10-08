@@ -28,9 +28,9 @@ map("n", ";", ":")
 map({ "n", "v" }, "<leader>o", ":update<CR> :source<CR>")
 
 -- pick
-map("n", "<leader>ff", "<cmd>Pick files<CR>")
-map("n", "<leader>fw", "<cmd>Pick grep_live<CR>")
-map("n", "<leader>fb", "<cmd>Pick buffers<CR>")
+map("n", "<leader>ff", "<cmd>Telescope find_files<CR>")
+map("n", "<leader>fw", "<cmd>Telescope grep_string<CR>")
+map("n", "<leader>fb", "<cmd>Telescope buffers<CR>")
 
 -- commenting
 map("n", "<leader>/", "gcc", { remap = true })
