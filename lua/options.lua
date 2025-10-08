@@ -52,10 +52,18 @@ map("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>")
 map("n", "<leader>r", "<cmd>lua vim.lsp.buf.rename()<CR>")
 map("n", "<leader>ca", "<cmd>lua vim.lsp.buf.code_action()<CR>")
 
+local map_multistep = require('mini.keymap').map_multistep
+
+map_multistep('i', '<Tab>', { 'pmenu_next' })
+map_multistep('i', '<S-Tab>', { 'pmenu_prev' })
+map_multistep('i', '<CR>', { 'pmenu_accept', 'minipairs_cr' })
+map_multistep('i', '<BS>', { 'minipairs_bs' })
+
 -- luasnip
 map("i", "<C-e>", function()
   require("luasnip").expand_or_jump(1)
 end, { silent = true })
+
 -- Hop
 map("n", "f", "<Cmd>HopWord<CR>")
 

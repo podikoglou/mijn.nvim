@@ -20,6 +20,7 @@ vim.pack.add({
   "https://github.com/nvim-mini/mini.snippets",
   "https://github.com/smoka7/hop.nvim",
   "https://github.com/nvim-mini/mini.pairs",
+  "https://github.com/nvim-mini/mini.keymap",
 
   -- lsp & language support
   "https://github.com/williamboman/mason.nvim",
