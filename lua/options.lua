@@ -87,5 +87,8 @@ map('n', '<C-j>', '<C-w>j')
 map('n', '<C-k>', '<C-w>k')
 map('n', '<C-l>', '<C-w>l')
 
+-- cancel search highlighting
+map("n", "<ESC>", ":noh<CR>")
+
 -- clipboard
 vim.opt.clipboard = "unnamedplus"
