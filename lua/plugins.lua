@@ -22,6 +22,7 @@ vim.pack.add({
   "https://github.com/nvim-mini/mini.pairs",
   "https://github.com/nvim-mini/mini.keymap",
   "https://github.com/nvim-mini/mini.basics",
+  "https://github.com/nvim-mini/mini.statusline",
 
   -- lsp & language support
   "https://github.com/williamboman/mason.nvim",
@@ -37,6 +38,7 @@ vim.pack.add({
 
 require("config.mini_icons")
 require("config.barbar")
+require("config.mini_statusline")
 require("config.mini_pairs")
 require("config.hop")
 require("config.mini_comment")

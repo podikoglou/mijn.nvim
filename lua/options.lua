@@ -61,7 +61,7 @@ map_multistep('i', '<BS>', { 'minipairs_bs' })
 
 -- luasnip
 map("i", "<C-e>", function()
-  require("luasnip").expand_or_jump(1)
+	require("luasnip").expand_or_jump(1)
 end, { silent = true })
 
 -- Hop
@@ -89,28 +89,3 @@ map('n', '<C-l>', '<C-w>l')
 
 -- clipboard
 vim.opt.clipboard = "unnamedplus"
-
--- colors
-local theme_script_path = vim.fn.expand("~/.local/share/tinted-theming/tinty/base16-vim-colors-file.vim")
-
-local function file_exists(file_path)
-  return vim.fn.filereadable(file_path) == 1 and true or false
-end
-
-local function handle_focus_gained()
-  if file_exists(theme_script_path) then
-    vim.cmd("source " .. theme_script_path)
-  end
-end
-
-if file_exists(theme_script_path) then
-  vim.o.termguicolors = true
-  vim.g.tinted_colorspace = 256
-  vim.g.tinted_background_transparent = "1"
-
-  vim.cmd("source " .. theme_script_path)
-
-  vim.api.nvim_create_autocmd("FocusGained", {
-    callback = handle_focus_gained,
-  })
-end
