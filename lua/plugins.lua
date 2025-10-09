@@ -21,6 +21,7 @@ vim.pack.add({
   "https://github.com/smoka7/hop.nvim",
   "https://github.com/nvim-mini/mini.pairs",
   "https://github.com/nvim-mini/mini.keymap",
+  "https://github.com/nvim-mini/mini.basics",
 
   -- lsp & language support
   "https://github.com/williamboman/mason.nvim",
@@ -39,6 +40,7 @@ require("config.barbar")
 require("config.mini_pairs")
 require("config.hop")
 require("config.mini_comment")
+require("config.mini_basics")
 require("config.conform")
 require("config.telescope")
 require("config.nvim-tree")
