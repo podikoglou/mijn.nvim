@@ -11,6 +11,8 @@ vim.pack.add({
   "https://github.com/hiphish/rainbow-delimiters.nvim",
   "https://github.com/nvim-tree/nvim-tree.lua",
   "https://github.com/nvim-telescope/telescope.nvim",
+  "https://github.com/kepano/flexoki-neovim",
+  -- future: https://nvim-mini.org/mini.nvim/readmes/mini-hues.html
 
   -- editing
   "https://github.com/nvim-mini/mini.comment",

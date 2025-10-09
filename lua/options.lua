@@ -14,6 +14,7 @@ vim.opt.winborder = "rounded"
 
 -- color scheme
 vim.opt.background = "dark"
+vim.cmd('colorscheme flexoki-dark')
 
 -- keybinds
 local map = vim.keymap.set
