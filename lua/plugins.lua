@@ -8,7 +8,6 @@ vim.pack.add({
   "https://github.com/nvim-tree/nvim-web-devicons",
 
   -- ui
-  "https://github.com/romgrk/barbar.nvim",
   "https://github.com/hiphish/rainbow-delimiters.nvim",
   "https://github.com/nvim-tree/nvim-tree.lua",
   "https://github.com/nvim-telescope/telescope.nvim",
@@ -23,6 +22,7 @@ vim.pack.add({
   "https://github.com/nvim-mini/mini.keymap",
   "https://github.com/nvim-mini/mini.basics",
   "https://github.com/nvim-mini/mini.statusline",
+  "https://github.com/nvim-mini/mini.tabline",
 
   -- lsp & language support
   "https://github.com/williamboman/mason.nvim",
@@ -37,7 +37,7 @@ vim.pack.add({
 })
 
 require("config.mini_icons")
-require("config.barbar")
+require("config.mini_tabline")
 require("config.mini_statusline")
 require("config.mini_pairs")
 require("config.hop")
