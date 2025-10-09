@@ -90,5 +90,9 @@ map('n', '<C-l>', '<C-w>l')
 -- cancel search highlighting
 map("n", "<ESC>", ":noh<CR>")
 
+-- move selected liens in visual mode?
+map("x", "K", ":move '<-2<CR>gv-gv")
+map("x", "J", ":move '>+1<CR>gv-gv")
+
 -- clipboard
 vim.opt.clipboard = "unnamedplus"
