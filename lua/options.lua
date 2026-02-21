@@ -42,12 +42,6 @@ map("v", "<leader>/", "gc", { remap = true })
 map("n", "<leader>e", "<cmd>NvimTreeToggle<CR>")
 -- map("n", "<C-n>", "<cmd>NvimTreeToggle<CR>")
 
--- buffers
-map("n", "L", "<cmd>bnext<CR>")
-map("n", "H", "<cmd>bprevious<CR>")
-map("n", "<Tab>", "<cmd>bnext<CR>")
-map("n", "<leader>x", "<cmd>bd<CR>")
-
 -- lsp
 map("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>")
 map("n", "<leader>r", "<cmd>lua vim.lsp.buf.rename()<CR>")
@@ -68,15 +62,14 @@ end, { silent = true })
 -- Hop
 map("n", "f", "<Cmd>HopWord<CR>")
 
--- Move to previous/next buffers
+-- Buffers
 map("n", "H", "<Cmd>:bprev<CR>")
 map("n", "<Tab>", "<Cmd>:bprev<CR>")
 
 map("n", "L", "<Cmd>:bnext<CR>")
 map("n", "<S-Tab>", "<Cmd>:bnext<CR>")
 
--- Close buffer
-map("n", "<leader>x", "<Cmd>BufferClose<CR>")
+map("n", "<leader>x", "<cmd>bd<CR>")
 
 -- shifting in visual mode stays in visual mode
 map('x', '>', '>gv')
