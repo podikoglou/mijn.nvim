@@ -36,6 +36,7 @@ vim.pack.add({
 
   -- languages
   "https://github.com/Julian/lean.nvim",
+  "https://github.com/mrcjkb/rustaceanvim",
 })
 
 require("config.mini_icons")
