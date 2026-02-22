@@ -38,6 +38,18 @@ map("n", "<leader>fb", "<cmd>Telescope buffers<CR>")
 map("n", "<leader>/", "gcc", { remap = true })
 map("v", "<leader>/", "gc", { remap = true })
 
+-- dial
+local dial = require("dial.map")
+
+map("n", "<C-a>", function() dial.manipulate("increment", "normal") end)
+map("n", "<C-x>", function() dial.manipulate("decrement", "normal") end)
+map("n", "g<C-a>", function() dial.manipulate("increment", "gnormal") end)
+map("n", "g<C-x>", function() dial.manipulate("decrement", "gnormal") end)
+map("x", "<C-a>", function() dial.manipulate("increment", "visual") end)
+map("x", "<C-x>", function() dial.manipulate("decrement", "visual") end)
+map("x", "g<C-a>", function() dial.manipulate("increment", "gvisual") end)
+map("x", "g<C-x>", function() dial.manipulate("decrement", "gvisual") end)
+
 -- tree
 map("n", "<leader>e", "<cmd>NvimTreeToggle<CR>")
 -- map("n", "<C-n>", "<cmd>NvimTreeToggle<CR>")

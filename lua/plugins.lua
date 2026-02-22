@@ -26,6 +26,7 @@ vim.pack.add({
   "https://github.com/nvim-mini/mini.statusline",
   "https://github.com/nvim-mini/mini.tabline",
   "https://github.com/nvim-mini/mini.indentscope",
+  "https://github.com/monaqa/dial.nvim",
 
   -- lsp & language support
   "https://github.com/williamboman/mason.nvim",
@@ -40,6 +41,7 @@ vim.pack.add({
   "https://github.com/mrcjkb/rustaceanvim",
 })
 
+require("config.dial")
 require("config.mini_indentscope")
 require("config.mini_icons")
 require("config.mini_tabline")
