@@ -55,9 +55,9 @@ map_multistep('i', '<CR>', { 'pmenu_accept', 'minipairs_cr' })
 map_multistep('i', '<BS>', { 'minipairs_bs' })
 
 -- luasnip
-map("i", "<C-e>", function()
-  require("luasnip").expand_or_jump(1)
-end, { silent = true })
+-- map("i", "<C-e>", function()
+--   require("luasnip").expand_or_jump(1)
+-- end, { silent = true })
 
 -- Hop
 map("n", "f", "<Cmd>HopWord<CR>")
