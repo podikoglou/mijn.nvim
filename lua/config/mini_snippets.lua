@@ -1,12 +1,23 @@
-local gen_loader = require("mini.snippets").gen_loader
+local snippets = require('mini.snippets')
 
-require("mini.snippets").setup({
-	snippets = {
-		-- -- Load custom file with global snippets first (adjust for Windows)
-		-- gen_loader.from_file('~/.config/nvim/snippets/global.json'),
+local gen_loader = snippets.gen_loader
 
-		-- Load snippets based on current language by reading files from
-		-- "snippets/" subdirectories from 'runtimepath' directories.
-		gen_loader.from_lang(),
-	},
+snippets.setup({
+  snippets = {
+    -- -- Load custom file with global snippets first (adjust for Windows)
+    -- gen_loader.from_file('~/.config/nvim/snippets/global.json'),
+
+    -- Load snippets based on current language by reading files from
+    -- "snippets/" subdirectories from 'runtimepath' directories.
+    gen_loader.from_lang(),
+  },
+})
+
+vim.api.nvim_create_autocmd('ModeChanged', {
+  pattern = '*:n',
+  callback = function()
+    while snippets.session.get() do
+      snippets.session.stop()
+    end
+  end,
 })
