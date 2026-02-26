@@ -100,5 +100,8 @@ map("n", "<ESC>", ":noh<CR>")
 map("x", "K", ":move '<-2<CR>gv-gv")
 map("x", "J", ":move '>+1<CR>gv-gv")
 
+-- jq
+map("n", "<leader>q", "<cmd>%!jq<CR>")
+
 -- clipboard
 vim.opt.clipboard = "unnamedplus"
