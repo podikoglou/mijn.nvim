@@ -70,6 +70,12 @@ map_multistep('i', '<BS>', { 'minipairs_bs' })
 -- map("i", "<C-e>", function()
 --   require("luasnip").expand_or_jump(1)
 -- end, { silent = true })
+--
+
+-- folding
+
+-- vim.opt.foldmethod = "expr"
+-- vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
 
 -- Hop
 map("n", "f", "<Cmd>HopWord<CR>")
