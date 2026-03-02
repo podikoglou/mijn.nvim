@@ -87,7 +87,7 @@ map("n", "<Tab>", "<Cmd>:bprev<CR>")
 map("n", "L", "<Cmd>:bnext<CR>")
 map("n", "<S-Tab>", "<Cmd>:bnext<CR>")
 
-map("n", "<leader>x", "<cmd>Bdelete<CR>")
+map("n", "<leader>x", "<cmd>bp | bd #<CR>")
 
 -- shifting in visual mode stays in visual mode
 map('x', '>', '>gv')

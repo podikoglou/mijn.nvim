@@ -12,7 +12,6 @@ vim.pack.add({
   "https://github.com/nvim-tree/nvim-tree.lua",
   "https://github.com/nvim-telescope/telescope.nvim",
   "https://github.com/kepano/flexoki-neovim",
-  "https://github.com/moll/vim-bbye",
   -- future: https://nvim-mini.org/mini.nvim/readmes/mini-hues.html
 
   -- editing
