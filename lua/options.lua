@@ -32,7 +32,7 @@ map({ "n", "v" }, "<leader>o", ":update<CR> :source<CR>")
 map("n", "<leader>t", "<cmd>Telescope<CR>")
 map("n", "<leader>ff", "<cmd>Telescope find_files<CR>")
 map("n", "<leader>fw", "<cmd>Telescope grep_string<CR>")
-map("n", "<leader>fb", "<cmd>Telescope buffers<CR>")
+map("n", "<leader>fb", "<cmd>Obsidian search<CR>")
 
 -- commenting
 map("n", "<leader>/", "gcc", { remap = true })
