@@ -13,6 +13,7 @@ vim.pack.add({
 	"https://github.com/nvim-telescope/telescope.nvim",
 	"https://github.com/kepano/flexoki-neovim",
 	-- future: https://nvim-mini.org/mini.nvim/readmes/mini-hues.html
+  "https://github.com/moll/vim-bbye",
 
 	-- editing
 	"https://github.com/nvim-mini/mini.comment",
