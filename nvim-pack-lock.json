@@ -80,6 +80,10 @@
       "rev": "caf23615b9b99bacc79ecd60f61c4e6a8ec18c84",
       "src": "https://github.com/nvim-mini/mini.tabline"
     },
+    "nvim": {
+      "rev": "c4d475e4b5684747cde9b3f849186af7837d4397",
+      "src": "https://github.com/catppuccin/nvim"
+    },
     "nvim-lspconfig": {
       "rev": "44acfe887d4056f704ccc4f17513ed41c9e2b2e6",
       "src": "https://github.com/neovim/nvim-lspconfig"
