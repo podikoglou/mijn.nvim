@@ -32,8 +32,9 @@ vim.pack.add({
   "https://github.com/kevinhwang91/nvim-ufo",
 
   -- lsp & language support
-  "https://github.com/williamboman/mason.nvim",
   "https://github.com/neovim/nvim-lspconfig",
+  "https://github.com/williamboman/mason.nvim",
+  "https://github.com/mason-org/mason-lspconfig.nvim",
   "https://github.com/nvim-treesitter/nvim-treesitter",
   "https://github.com/obsidian-nvim/obsidian.nvim",
 
