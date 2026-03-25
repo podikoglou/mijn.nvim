@@ -17,7 +17,6 @@ vim.pack.add({
 
   -- editing
   "https://github.com/nvim-mini/mini.comment",
-  "https://github.com/stevearc/conform.nvim",
   "https://github.com/rafamadriz/friendly-snippets",
   "https://github.com/nvim-mini/mini.snippets",
   "https://github.com/smoka7/hop.nvim",
@@ -36,6 +35,9 @@ vim.pack.add({
   "https://github.com/williamboman/mason.nvim",
   "https://github.com/mason-org/mason-lspconfig.nvim",
   "https://github.com/nvim-treesitter/nvim-treesitter",
+  "https://github.com/stevearc/conform.nvim",
+  "https://github.com/mfussenegger/nvim-lint",
+
   "https://github.com/obsidian-nvim/obsidian.nvim",
 
   -- completion
@@ -56,6 +58,7 @@ require("config.hop")
 require("config.mini_comment")
 require("config.mini_basics")
 require("config.conform")
+require("config.nvim_lint")
 require("config.telescope")
 require("config.nvim-tree")
 require("config.mason")
