@@ -9,6 +9,7 @@ require("conform").setup({
     javascriptreact = { "oxfmt" },
     json = { "oxfmt" },
     vue = { "oxfmt" },
+    yaml = { "yamlfmt" },
   },
   format_on_save = {
     timeout_ms = 500,
