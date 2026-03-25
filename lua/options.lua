@@ -31,7 +31,7 @@ map({ "n", "v" }, "<leader>o", ":update<CR> :source<CR>")
 -- pick
 map("n", "<leader>t", "<cmd>Telescope<CR>")
 map("n", "<leader>ff", "<cmd>Telescope find_files<CR>")
-map("n", "<leader>fw", "<cmd>Telescope grep_string<CR>")
+map("n", "<leader>fw", "<cmd>Telescope live_grep<CR>")
 map("n", "<leader>fb", "<cmd>Obsidian search<CR>")
 
 -- commenting
