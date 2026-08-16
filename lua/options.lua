@@ -14,7 +14,18 @@ vim.opt.winborder = "rounded"
 
 -- color scheme
 vim.opt.background = "dark"
-vim.cmd('colorscheme catppuccin')
+vim.cmd("colorscheme catppuccin")
+
+-- Use the terminal background instead of a theme background.
+vim.api.nvim_set_hl(0, "Normal", { bg = "NONE" })
+vim.api.nvim_set_hl(0, "NormalNC", { bg = "NONE" })
+vim.api.nvim_set_hl(0, "SignColumn", { bg = "NONE" })
+vim.api.nvim_set_hl(0, "EndOfBuffer", { bg = "NONE" })
+vim.api.nvim_set_hl(0, "FoldColumn", { bg = "NONE" })
+vim.api.nvim_set_hl(0, "CursorLine", { bg = "NONE" })
+vim.api.nvim_set_hl(0, "StatusLine", { bg = "NONE" })
+vim.api.nvim_set_hl(0, "StatusLineNC", { bg = "NONE" })
+vim.api.nvim_set_hl(0, "WinSeparator", { bg = "NONE" })
 
 -- keybinds
 local map = vim.keymap.set
@@ -41,14 +52,30 @@ map("v", "<leader>/", "gc", { remap = true })
 -- dial
 local dial = require("dial.map")
 
-map("n", "<C-a>", function() dial.manipulate("increment", "normal") end)
-map("n", "<C-x>", function() dial.manipulate("decrement", "normal") end)
-map("n", "g<C-a>", function() dial.manipulate("increment", "gnormal") end)
-map("n", "g<C-x>", function() dial.manipulate("decrement", "gnormal") end)
-map("x", "<C-a>", function() dial.manipulate("increment", "visual") end)
-map("x", "<C-x>", function() dial.manipulate("decrement", "visual") end)
-map("x", "g<C-a>", function() dial.manipulate("increment", "gvisual") end)
-map("x", "g<C-x>", function() dial.manipulate("decrement", "gvisual") end)
+map("n", "<C-a>", function()
+	dial.manipulate("increment", "normal")
+end)
+map("n", "<C-x>", function()
+	dial.manipulate("decrement", "normal")
+end)
+map("n", "g<C-a>", function()
+	dial.manipulate("increment", "gnormal")
+end)
+map("n", "g<C-x>", function()
+	dial.manipulate("decrement", "gnormal")
+end)
+map("x", "<C-a>", function()
+	dial.manipulate("increment", "visual")
+end)
+map("x", "<C-x>", function()
+	dial.manipulate("decrement", "visual")
+end)
+map("x", "g<C-a>", function()
+	dial.manipulate("increment", "gvisual")
+end)
+map("x", "g<C-x>", function()
+	dial.manipulate("decrement", "gvisual")
+end)
 
 -- tree
 map("n", "<leader>e", "<cmd>NvimTreeToggle<CR>")
@@ -59,12 +86,12 @@ map("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>")
 map("n", "<leader>r", "<cmd>lua vim.lsp.buf.rename()<CR>")
 map("n", "<leader>ca", "<cmd>lua vim.lsp.buf.code_action()<CR>")
 
-local map_multistep = require('mini.keymap').map_multistep
+local map_multistep = require("mini.keymap").map_multistep
 
-map_multistep('i', '<Tab>', { 'pmenu_next' })
-map_multistep('i', '<S-Tab>', { 'pmenu_prev' })
-map_multistep('i', '<CR>', { 'pmenu_accept', 'minipairs_cr' })
-map_multistep('i', '<BS>', { 'minipairs_bs' })
+map_multistep("i", "<Tab>", { "pmenu_next" })
+map_multistep("i", "<S-Tab>", { "pmenu_prev" })
+map_multistep("i", "<CR>", { "pmenu_accept", "minipairs_cr" })
+map_multistep("i", "<BS>", { "minipairs_bs" })
 
 -- luasnip
 -- map("i", "<C-e>", function()
@@ -78,7 +105,7 @@ map_multistep('i', '<BS>', { 'minipairs_bs' })
 -- vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
 
 -- Hop
-map("n", "f", "<Cmd>HopWord<CR>")
+-- map("n", "f", "<Cmd>HopWord<CR>")
 
 -- Buffers
 map("n", "H", "<Cmd>:bprev<CR>")
@@ -90,14 +117,14 @@ map("n", "<S-Tab>", "<Cmd>:bnext<CR>")
 map("n", "<leader>x", "<cmd>bp | bd #<CR>")
 
 -- shifting in visual mode stays in visual mode
-map('x', '>', '>gv')
-map('x', '<', '<gv')
+map("x", ">", ">gv")
+map("x", "<", "<gv")
 
 -- move aroudn panes
-map('n', '<C-h>', '<C-w>h')
-map('n', '<C-j>', '<C-w>j')
-map('n', '<C-k>', '<C-w>k')
-map('n', '<C-l>', '<C-w>l')
+map("n", "<C-h>", "<C-w>h")
+map("n", "<C-j>", "<C-w>j")
+map("n", "<C-k>", "<C-w>k")
+map("n", "<C-l>", "<C-w>l")
 
 -- cancel search highlighting
 map("n", "<ESC>", ":noh<CR>")
@@ -108,6 +135,7 @@ map("x", "J", ":move '>+1<CR>gv-gv")
 
 -- jq
 map("n", "<leader>q", "<cmd>%!jq<CR>")
+map("n", "<S-q>", "gq")
 
 -- clipboard
 vim.opt.clipboard = "unnamedplus"
