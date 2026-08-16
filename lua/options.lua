@@ -13,19 +13,7 @@ vim.opt.guicursor = "n-v-i-c:block-Cursor"
 vim.opt.winborder = "rounded"
 
 -- color scheme
-vim.opt.background = "dark"
-vim.cmd("colorscheme catppuccin")
-
--- Use the terminal background instead of a theme background.
-vim.api.nvim_set_hl(0, "Normal", { bg = "NONE" })
-vim.api.nvim_set_hl(0, "NormalNC", { bg = "NONE" })
-vim.api.nvim_set_hl(0, "SignColumn", { bg = "NONE" })
-vim.api.nvim_set_hl(0, "EndOfBuffer", { bg = "NONE" })
-vim.api.nvim_set_hl(0, "FoldColumn", { bg = "NONE" })
-vim.api.nvim_set_hl(0, "CursorLine", { bg = "NONE" })
-vim.api.nvim_set_hl(0, "StatusLine", { bg = "NONE" })
-vim.api.nvim_set_hl(0, "StatusLineNC", { bg = "NONE" })
-vim.api.nvim_set_hl(0, "WinSeparator", { bg = "NONE" })
+require("config.theme")
 
 -- keybinds
 local map = vim.keymap.set
