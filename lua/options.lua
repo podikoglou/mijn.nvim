@@ -73,6 +73,8 @@ map("n", "<leader>e", "<cmd>NvimTreeToggle<CR>")
 map("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>")
 map("n", "<leader>r", "<cmd>lua vim.lsp.buf.rename()<CR>")
 map("n", "<leader>ca", "<cmd>lua vim.lsp.buf.code_action()<CR>")
+map("n", "<leader>gr", "<cmd>lua vim.lsp.buf.references()<CR>")
+map("n", "<leader>cr", "<cmd>lua vim.lsp.buf.references()<CR>")
 
 local map_multistep = require("mini.keymap").map_multistep
 
@@ -94,6 +96,10 @@ map_multistep("i", "<BS>", { "minipairs_bs" })
 
 -- Hop
 -- map("n", "f", "<Cmd>HopWord<CR>")
+
+-- lazygit
+
+vim.keymap.set("n", "<Leader>lg", "<cmd>LazyGit<CR>", { desc = "Open LazyGit" })
 
 -- Buffers
 map("n", "H", "<Cmd>:bprev<CR>")
