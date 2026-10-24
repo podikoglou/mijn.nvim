@@ -1,12 +1,12 @@
 vim.lsp.enable({
-  'clangd',
-  'hls',
+	"clangd",
+	"hls",
 })
 
-vim.lsp.config('hls', {
-  settings = {
-    haskell = {
-      formattingProvider = 'ormolu',
-    },
-  },
+vim.lsp.config("hls", {
+	settings = {
+		haskell = {
+			formattingProvider = "ormolu",
+		},
+	},
 })

@@ -24,6 +24,10 @@
       "rev": "707049feaca9ae65abb3696eff9aefc7879e66aa",
       "src": "https://github.com/smoka7/hop.nvim"
     },
+    "lazygit.nvim": {
+      "rev": "9ffc6103926718f7070fb4017694543cd7dc9718",
+      "src": "https://github.com/kdheepak/lazygit.nvim"
+    },
     "lean.nvim": {
       "rev": "7b2807a759b9b895e6e5e20ae4b147074584fd9c",
       "src": "https://github.com/Julian/lean.nvim"
