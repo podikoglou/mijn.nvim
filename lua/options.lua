@@ -73,6 +73,9 @@ map("n", "<leader>e", "<cmd>NvimTreeToggle<CR>")
 -- jump to next/previous diagnostic (error, warning...)
 map("n", "]d", function() vim.diagnostic.jump({ count = 1, float = true }) end)
 map("n", "[d", function() vim.diagnostic.jump({ count = -1, float = true }) end)
+-- single-key alternatives: gk/gj shadow the default screen-line motions
+map("n", "gk", function() vim.diagnostic.jump({ count = -1, float = true }) end)
+map("n", "gj", function() vim.diagnostic.jump({ count = 1, float = true }) end)
 
 -- lsp
 map("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>")
