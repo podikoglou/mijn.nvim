@@ -69,6 +69,11 @@ end)
 map("n", "<leader>e", "<cmd>NvimTreeToggle<CR>")
 -- map("n", "<C-n>", "<cmd>NvimTreeToggle<CR>")
 
+-- diagnostics
+-- jump to next/previous diagnostic (error, warning...)
+map("n", "]d", function() vim.diagnostic.jump({ count = 1, float = true }) end)
+map("n", "[d", function() vim.diagnostic.jump({ count = -1, float = true }) end)
+
 -- lsp
 map("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>")
 map("n", "<leader>r", "<cmd>lua vim.lsp.buf.rename()<CR>")
