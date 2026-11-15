@@ -10,10 +10,11 @@ vim.pack.add({
 	-- ui
 	"https://github.com/hiphish/rainbow-delimiters.nvim",
 	"https://github.com/nvim-tree/nvim-tree.lua",
-	"https://github.com/nvim-telescope/telescope.nvim",
 	"https://github.com/kepano/flexoki-neovim",
 	"https://github.com/catppuccin/nvim",
 	"https://github.com/kdheepak/lazygit.nvim",
+
+	"https://github.com/dmtrKovalenko/fff",
 	-- future: https://nvim-mini.org/mini.nvim/readmes/mini-hues.html
 
 	-- editing
@@ -60,7 +61,7 @@ require("config.mini_comment")
 require("config.mini_basics")
 require("config.conform")
 require("config.nvim_lint")
-require("config.telescope")
+require("config.fff")
 require("config.nvim-tree")
 require("config.mason")
 require("config.mini_completion")

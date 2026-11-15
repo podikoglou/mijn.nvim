@@ -28,9 +28,18 @@ map("n", ";", ":")
 map({ "n", "v" }, "<leader>o", ":update<CR> :source<CR>")
 
 -- pick
-map("n", "<leader>t", "<cmd>Telescope<CR>")
-map("n", "<leader>ff", "<cmd>Telescope find_files<CR>")
-map("n", "<leader>fw", "<cmd>Telescope live_grep<CR>")
+-- map("n", "<leader>t", "<cmd>Telescope<CR>")
+-- map("n", "<leader>ff", "<cmd>Telescope find_files<CR>")
+-- map("n", "<leader>fw", "<cmd>Telescope live_grep<CR>")
+
+map("n", "<leader>ff", function()
+	require("fff").find_files()
+end, { desc = "FFFind files" })
+
+map("n", "<leader>fw", function()
+	require("fff").live_grep()
+end, { desc = "FFFind files" })
+
 map("n", "<leader>fb", "<cmd>Obsidian search<CR>")
 
 -- commenting
@@ -71,11 +80,19 @@ map("n", "<leader>e", "<cmd>NvimTreeToggle<CR>")
 
 -- diagnostics
 -- jump to next/previous diagnostic (error, warning...)
-map("n", "]d", function() vim.diagnostic.jump({ count = 1, float = false }) end)
-map("n", "[d", function() vim.diagnostic.jump({ count = -1, float = false }) end)
+map("n", "]d", function()
+	vim.diagnostic.jump({ count = 1, float = false })
+end)
+map("n", "[d", function()
+	vim.diagnostic.jump({ count = -1, float = false })
+end)
 -- single-key alternatives: gk/gj shadow the default screen-line motions
-map("n", "gk", function() vim.diagnostic.jump({ count = -1, float = false }) end)
-map("n", "gj", function() vim.diagnostic.jump({ count = 1, float = false }) end)
+map("n", "gk", function()
+	vim.diagnostic.jump({ count = -1, float = false })
+end)
+map("n", "gj", function()
+	vim.diagnostic.jump({ count = 1, float = false })
+end)
 
 -- lsp
 map("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>")
